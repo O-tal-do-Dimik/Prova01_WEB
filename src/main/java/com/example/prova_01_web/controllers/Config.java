@@ -22,7 +22,7 @@ public class Config {
 
 
 
-    private  String INSERINDO = "INSSCRICAO,VALIDADE,CALORIAS)VALUES (1,'Yakisoba',32.75,'A refeicao e uma mistura de macarrao com carnes e alguns legumes','consumir em ate 3 dias',1123.4)";
+    private  String INSERINDO = "INSERT INTO COMIDAS (ID,NAME,PRECO,DESCRICAO,VALIDADE,CALORIAS) VALUES (1,'Yakisoba',32.75,'A refeicao e uma mistura de macarrao com carnes e alguns legumes','consumir em ate 3 dias',1123.4)";
 
 
     @GetMapping
