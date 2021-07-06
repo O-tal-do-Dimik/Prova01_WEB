@@ -70,27 +70,27 @@ public class Cliente {
                 "        <td>Calorias</td>\n" +
                 "        <td>Carrinho</td>\n" +
                 "    </tr>");
-//
-//        while(resultbanco.next())
-//        {
-//            response.getWriter().append("    <tr>\n" +
-//                    "        <td>"+resultbanco.getInt("ID")+"</td>\n" +
-//                    "        <td>"+resultbanco.getString("NAME")+"</td>\n" +
-//                    "        <td>"+resultbanco.getDouble("PRECO")+"</td>\n" +
-//                    "        <td>"+resultbanco.getString("DESCRICAO")+"</td>\n" +
-//                    "        <td>"+resultbanco.getString("VALIDADE")+"</td>\n" +
-//                    "        <td>"+resultbanco.getDouble("CALORIAS")+"</td>\n" +
-//                    "        <td><form action='/cliente' method='GET' id='add_carrinho_"+resultbanco.getInt("ID")+"'><input type='hidden' name='id' id='id' value='"+resultbanco.getInt("ID")+"'/><a href='#' onClick='document.getElementById(\"add_carrinho_"+resultbanco.getInt("ID")+"\").submit();'>Adicionar</a></form></td>\n" +
-//                    "    </tr>");
-//
-//        }
-//
-//        response.getWriter().append("</table>\n" +
-//                "\n" +
-//                "<a href='/verCarrinho'> Ver Carrinho </a>\n" +
-//                "</body>\n" +
-//                "</html>");
-//
+
+        while(resultbanco.next())
+        {
+            response.getWriter().append("    <tr>\n" +
+                    "        <td>"+resultbanco.getInt("ID")+"</td>\n" +
+                    "        <td>"+resultbanco.getString("NAME")+"</td>\n" +
+                    "        <td>"+resultbanco.getDouble("PRECO")+"</td>\n" +
+                    "        <td>"+resultbanco.getString("DESCRICAO")+"</td>\n" +
+                    "        <td>"+resultbanco.getString("VALIDADE")+"</td>\n" +
+                    "        <td>"+resultbanco.getDouble("CALORIAS")+"</td>\n" +
+                    "        <td><form action='/cliente' method='GET' id='add_carrinho_"+resultbanco.getInt("ID")+"'><input type='hidden' name='id' id='id' value='"+resultbanco.getInt("ID")+"'/><a href='#' onClick='document.getElementById(\"add_carrinho_"+resultbanco.getInt("ID")+"\").submit();'>Adicionar</a></form></td>\n" +
+                    "    </tr>");
+
+        }
+
+        response.getWriter().append("</table>\n" +
+                "\n" +
+                "<a href='/verCarrinho'> Ver Carrinho </a>\n" +
+                "</body>\n" +
+                "</html>");
+
     }
 
 
