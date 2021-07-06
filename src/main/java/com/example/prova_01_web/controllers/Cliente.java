@@ -51,25 +51,25 @@ public class Cliente {
         PreparedStatement chamaBanco =(PreparedStatement)  conexao.prepareStatement(CONSULTA);
         ResultSet resultbanco = chamaBanco.executeQuery();
 
-//        response.setContentType("text/html");
-//        response.getWriter().append("<!DOCTYPE html>\n" +
-//                "<html lang=\"en\">\n" +
-//                "<head>\n" +
-//                "    <meta charset=\"UTF-8\">\n" +
-//                "    <title>Title</title>\n" +
-//                "</head>\n" +
-//                "<body>\n" +
-//                "Restaurante Chines Cansado\n" +
-//                "\n" +
-//                "<table border=\"1\"><tr>\n" +
-//                "        <td>Id</td>\n" +
-//                "        <td>Produto</td>\n" +
-//                "        <td>Preço</td>\n" +
-//                "        <td>Descrição</td>\n" +
-//                "        <td>Validade</td>\n" +
-//                "        <td>Calorias</td>\n" +
-//                "        <td>Carrinho</td>\n" +
-//                "    </tr>");
+        response.setContentType("text/html");
+        response.getWriter().append("<!DOCTYPE html>\n" +
+                "<html lang=\"en\">\n" +
+                "<head>\n" +
+                "    <meta charset=\"UTF-8\">\n" +
+                "    <title>Title</title>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "Restaurante Chines Cansado\n" +
+                "\n" +
+                "<table border=\"1\"><tr>\n" +
+                "        <td>Id</td>\n" +
+                "        <td>Produto</td>\n" +
+                "        <td>Preço</td>\n" +
+                "        <td>Descrição</td>\n" +
+                "        <td>Validade</td>\n" +
+                "        <td>Calorias</td>\n" +
+                "        <td>Carrinho</td>\n" +
+                "    </tr>");
 //
 //        while(resultbanco.next())
 //        {
